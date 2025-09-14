@@ -1,0 +1,456 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.hide{
+    display: none;
+}
+header{
+    width: 1440px;
+    height: 150px;
+    margin: 0 auto;
+}
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+footer{
+    width: 1440px;
+    height: 200px;
+    margin: 0 auto;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+header nav .gnb {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+  text-align: center;
+}
+header nav .gnb li > a:hover {
+    font-weight: bold;
+}
+header nav .gnb li a{
+    color: #fff;
+}
+header nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -12px;
+  transform: none;
+  min-width: 150px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+header nav .gnb > li {
+  position: relative;
+  min-width: 120px;
+}
+header nav .submenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  min-width: 150px;
+  color: #333;
+}
+.main-visual{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin-top: -150px;
+}
+.slider{
+    display: flex;
+    width: 300%; /*이미지 3장*/
+    height: 100%;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.performance-section > h2{
+  font-size: 30px;
+}
+.performance-section {
+  padding: 40px;
+  margin-top: 120px;
+}
+
+.performance-layout {
+  display: flex;
+  gap: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+}
+
+.card {
+  width: 260px;
+  height: 420px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+.card p {
+  font-weight: bold;
+  padding: 35px 0;
+}
+
+.calendar-box {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  height: 419px;
+  margin-top: 30px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.calendar-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.calendar-date{
+  margin-left: 200px;
+  font-size: 20px;
+  color: #333;
+}
+.calendar-title img {
+  width: 24px;
+  height: 24px;
+}
+.calendar-header p{
+    font-size: 19px;
+}
+.calendar-title h3 {
+  font-size: 25px;
+  margin: 0;
+}
+.calendar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+}
+
+.calendar th,.calendar td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 50px;
+}
+
+.calendar td {
+  position: relative;
+}
+.calendar td .dot {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: red;
+}
+.opera-section{
+  width: 1440px;
+}
+.opera-section .opera{
+  
+}
+.opera-section > h1{
+  font-size: 30px;
+  padding: 60px 36px;
+}
+.opera-section .opera > h2{
+  padding: 40px 38px;
+  font-size: 25px;
+}
+.opera-section .opera ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.opera-section .opera ul li{
+  background-color: #fff;
+  width: 250px;
+  height: 400px;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.opera-section .opera ul li img{
+  width: 250px;
+  border-radius: 5px;
+}
+.opera-section .opera ul li p{
+  padding-left:  10px;
+}
+.opera-container{
+  position: relative;
+  width: 100%;
+  height: 578px;
+  overflow: hidden;
+}
+.opera-section .opera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.opera-section .opera h2 {
+  position: relative;
+  z-index: 3;
+}
+.opera-section .opera ul {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  z-index: 1;
+}
+.opera-section .opera.opera-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+.opera-section .opera.opera-active ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.opera-tabs {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 30px 30px;
+  margin-bottom: 20px;
+}
+
+.opera-tabs li {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+.opera-tabs li.active {
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+.opera-contents .tab-content {
+  display: none;
+}
+.opera-contents .tab-content.active {
+  display: block;
+}
+.academy-section{
+  width: 1440px;
+  height: 600px;
+  padding: 20px 30px;
+  position: relative;
+}
+.academy-section > h2{
+  padding: 0 22px;
+  font-size: 30px;
+}
+.academy-tabs {
+  display: flex;
+  gap: 20px;
+  padding: 0 22px;
+  position: absolute;top: 129px;left: 45px;
+}
+.academy-tabs h2 {
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+.academy-tabs h2.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.academy-section .academy,.academy-section .faq {
+  display: none;
+}
+
+.academy-section .academy.on,.academy-section .faq.on {
+  display: block;
+}
+.academy-section .academy{
+  width: 548px;
+  height: 369px;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+.academy-section .academy ul{
+  width: 548px;
+  height: 340px;
+  margin-top: 57px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.academy-section .academy li{
+  line-height: 3;
+  border-bottom: 1px solid #ccc;
+
+}
+.academy-section .academy li p{
+  margin-left: 150px;
+  
+}
+.academy-section .academy span{
+  float: left;
+}
+.academy-section .faq{
+  /* position: absolute;top: 140px; */
+  /* background-color: #fbc9c9; */
+  /* width: 548px; */
+  /* height: 369px; */
+  /* padding: 20px 20px; */
+  position: static;
+  margin-top: 120px;
+}
+.academy-section .faq ul{ 
+  background-color: #fff;
+  width: 548px;
+  height: 340px;
+  padding: 10px 0px;
+  margin-left: 38px;
+}
+.academy-section .faq li{
+  line-height: 3;
+  border-bottom: 1px solid #ccc;
+}
+.inform-box{
+  position: absolute;right: 440px;top: 145px;
+}
+.inform-section{
+  width: 300px;
+  overflow: hidden;
+}
+.inform{
+  width: 900px;
+  
+}
+.inform div{
+  width: 300px;
+  float: left;
+}
+.inform div img{
+  width: 300px;
+  height: 340px;
+}
+.inform-box > h2{
+  position: relative;
+  top: -14px;z-index: 10;
+}
+.service >h2{
+  position: absolute;top: 131px;right: 201px;
+}
+.service div{
+  position: absolute;top: 188px;right: 275px;
+
+}
+.service .location{
+  position: absolute;top: 313px;right: 269px;
+}
+.service .location p{
+  position: absolute;top: 8px;right: -106px;
+}
+.service div p{
+  position: absolute;top: 8px;right: -75px;
+}
+.news-sect {
+  width: 1440px;
+  height: 600px;
+  padding: 40px 30px;
+}
+
+.news-sect > h2 {
+  font-size: 28px;
+  margin-bottom: 77px;
+}
+
+.news-items {
+  display: flex;
+  gap: 60px;
+}
+.news-items div img {
+  width: 281px;
+  height: 260px;
+}
+
+.footer {
+  width: 1440px;
+  background-color: #5b5b5b;
+  color: #fff;
+  padding: 30px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.footer-menu ul {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info p {
+  line-height: 1.8;
+}

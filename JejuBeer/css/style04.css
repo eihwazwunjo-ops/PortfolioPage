@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.hide{
+    display: none;
+}
+.center{
+    margin: 0 auto;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; 
+    /* position: relative; */
+    position: fixed; top: 0; left: 0; z-index: 1000;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+footer{
+    width: 1440px;
+    margin: 0 auto;
+}
+header h1{
+    width: 200px;
+    padding: 30px 20px;
+    margin-right: 134px;
+}
+header h1 img{
+    width: 179px;
+    height: 47px;
+}
+/* 네비 */
+header nav{
+    width: 700px;
+    z-index: 999;
+}
+header nav .gnb{
+    display: flex;
+    gap: 89px;
+    margin-top: 0;
+    text-align: center;
+}
+.gnb li{
+     line-height: 2;
+     position: relative;
+     top: 0;
+}
+
+.submenu{
+  position: absolute;
+  top: 80px;
+  left: -50px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  width: 200px;
+}
+.submenu li a {
+  display: block;
+  font-size: 14px;
+  line-height: 2;
+}
+header nav .gnb li .submenu li a {
+  color: #333;
+}
+.bg{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    display: none;
+    z-index: 1;
+}
+header nav .gnb li a:hover{
+    color: #136bb8;
+}
+.fol_r{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.fol_r li{
+    float: left;
+    margin-right: 20px;
+}
+header nav .gnb li a, .fol_r li a{
+    color: #1CCAD3;
+}
+header nav .gnb li .submenu li a:hover {
+  color: #1CCAD3;
+}
+.submenu, .bg{
+    display: none;
+}
+/* 첫번째 섹션 */
+.beer-hero{
+  background: linear-gradient(180deg,#00c9cf 0%,#0fd4db 100%); /* 그라데이션 */
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+.beer-hero_inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 174px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;  /* 왼쪽 텍스트 오른쪽 이미지 */
+  align-items: center;
+  gap: 48px;
+}
+.beer-hero_title{
+  color:#fff;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing:-0.02em;
+  margin: 0 0 16px;
+}
+.beer-hero_desc{
+  color: rgba(255,255,255,.95);
+  line-height: 1.9;
+  font-size: 14px;
+  max-width: 520px;
+}
+.beer-chips{
+  display:flex; flex-wrap:wrap; gap:12px; margin-top:20px;
+}
+.beer-chips li{
+  background:#ED8268;
+  color:#fff;
+  font-weight:700;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:999px;
+  box-shadow:0 1px 0 rgba(0,0,0,.05);
+}
+
+/* 오른쪽 캔 이미지 */
+.beer-hero_visual{
+  display:flex; justify-content:center;
+}
+.beer-hero_visual img{
+  width:auto; height:260px;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,.18)); /*그림자 효과*/
+}
+/* 두번째 섹션 */
+.beer-specs {
+  background: #f0fcfc;
+  padding: 40px 0;
+}
+/* 흰색 박스 */
+.specs-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+/* 부모 박스 */
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+}
+.specs-table {
+  display: grid;
+  gap: 12px;
+}
+.specs-table div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  font-size: 14px;
+}
+.specs-table dt {
+  font-weight: bold;
+  color: #333;
+}
+.specs-table dd {
+  color: #333;
+}
+.specs-detail p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.specs-detail strong {
+  font-weight: bold;
+}
+/* 제품 둘러보기 */
+.beer-others{
+  background:#f0fcfc;
+  padding: 50px 0 80px;
+}
+
+/* 섹션 제목 */
+.beer-others h3{
+  max-width:1200px;
+  margin:0 auto 18px;
+  padding:0 81px;
+  font-size:18px;
+  color:#111;
+}
+
+/* 카드 그리드 */
+.others-grid{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 20px;
+  display:grid;
+  /* grid-template-columns:repeat(4,1fr); */
+  gap:24px;
+}
+
+/* 각 카드 */
+.product-card{
+  display:grid;
+  place-items:center;           /* 캔 이미지를 가운데 정렬 */
+  height:240px;
+  background:#eee;
+  border-radius:4px;
+  text-align:center;
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+.product-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 18px rgba(0,0,0,.08);
+}
+
+/* 카드 내부 이미지 */
+.product-card img{
+  height:160px;
+  width:auto;
+  display:block;
+}
+
+.beer-others { position: relative; }
+
+.others-viewport{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px; 
+  overflow: hidden;  
+}
+
+.others-grid{
+  display: flex;              
+  will-change: transform;
+  transform: translateX(0);   /* 시작 위치 */
+  transition: transform 0.35s ease;  /* 부드럽게 */
+}
+
+.product-card{
+  flex: 0 0 280px;         
+  height: 240px;
+  margin-right: 24px;      
+  display: grid; place-items: center;
+  background: #eee; border-radius: 4px; text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.product-card:last-child{ margin-right: 0; }
+.product-card img{ height:160px; width:auto; display:block; }
+
+/* 좌우 버튼 */
+.others-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  background: rgba(255,255,255,.9); border:none; padding:8px;
+  border-radius:999px; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+.others-nav.prev{ left: 18px; }
+.others-nav.next{ right: 18px; }
+
+/* 푸터 */
+.foot-set{
+    display: flex;
+    gap: 44px;
+    text-align: center;
+    line-height: 3;
+    color: #C7C7C7;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.foot-set1{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    color: #C7C7C7;
+    margin-left: 5px;
+}
+footer p{
+    margin: 20px 0;
+    color: #C7C7C7;
+    margin-left: 5px;
+}
+
+/* 초기 상태: 투명도 0 */
+.beer-hero_visual img {
+  opacity: 0;
+  transform: translateX(60px) scale(0.98);
+  /* transition: none;  */
+}
+.beer-hero_copy {
+  opacity: 0;
+  transform: translateY(14px);
+  /* transition: none;  */
+}
+
+/* 활성화: 원래 자리로 이동 + 보이기 */
+.page-loaded .beer-hero_visual img {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: transform 1.5s cubic-bezier(0.22,.61,0.36,1), opacity 1.5s ease;
+}
+.page-loaded .beer-hero_copy {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1.2s ease 0.3s, opacity 1.2s ease 0.3s;
+
+}
+
+/* Top 버튼 */
+.to-top{
+  position: fixed;
+  right: 24px; bottom: 24px;
+  width: 44px; height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: #1CCAD3; color: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.16);
+  cursor: pointer;
+  z-index: 1100;       
+  display: grid;
+  place-items: center; /*justify-items, align-items 축약형*/
+
+  /* 처음엔 숨김  */
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none; /*클릭 x*/
+  transition: opacity .25s ease, transform .25s ease;
+}
+.to-top:hover{ 
+  filter: brightness(1.05); 
+}
+.to-top.show{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

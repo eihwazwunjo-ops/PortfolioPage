@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>라네즈</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- 드래그 플러그인 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="index.html">
+                <img src="images/imgi_1_laneige_logo_kr_240118.svg" alt="로고">
+            </a>
+            <nav>
+                <ul class="gnb">
+                    <li class="has-mega">
+                        <a href="#">브랜드</a>
+                        <div class="mega mega-skincare">
+                            <div class="mega_inner">
+                                <div class="mega_col">
+                                    <ul class="mega_links">
+                                    <li><a href="#">브랜드 스토리</a></li>
+                                    <li><a href="#">브랜드 캐릭터</a></li>
+                                    <li><a href="#">지속가능성</a></li>
+                                    <li><a href="meets-arts.html">미츠아트</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-mega">
+                    <a href="#">LBLL</a>
+                    <div class="mega mega-skincare">
+                        <div class="mega_inner">
+                            <div class="mega_col">
+                                <ul class="mega_links">
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">연구</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="has-mega">
+                    <a href="#">베스트&신상품</a>
+                    <div class="mega mega-skincare">
+                        <div class="mega_inner">
+                            <div class="mega_col">
+                                <ul class="mega_links">
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">어워드 위너</a></li>
+                                <li><a href="#">베스트셀러</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="has-mega">
+                    <a href="#">스킨케어</a>
+                    <div class="mega mega-skincare">
+                        <div class="mega_inner mega_links_repeat3 mega_with_image">
+                        <!-- 컬럼 1: 유형별 -->
+                        <div class="mega_col">
+                            <h4 class="mega_title">유형별</h4>
+                            <ul class="mega_links_meun">
+                            <li><a href="#">전체보기</a></li>
+                            <li><a href="#">클렌징</a></li>
+                            <li><a href="#">스킨/미스트</a></li>
+                            <li><a href="#">로션/에멀전</a></li>
+                            <li><a href="#">세럼/에센스</a></li>
+                            <li><a href="#">젤/크림</a></li>
+                            <li><a href="#">마스크/팩</a></li>
+                            <li><a href="#">아이케어</a></li>
+                            <li><a href="#">선케어</a></li>
+                            <li><a href="#">립케어</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 컬럼 2: 고민별 -->
+                        <div class="mega_col">
+                            <h4 class="mega_title">고민별</h4>
+                            <ul class="mega_links_meun">
+                            <li><a href="#">전체보기</a></li>
+                            <li><a href="#">수분/보습</a></li>
+                            <li><a href="#">민감/진정</a></li>
+                            <li><a href="#">브라이트닝</a></li>
+                            <li><a href="#">안티에이징</a></li>
+                            <li><a href="#">피지/모공</a></li>
+                            <li><a href="#">자외선차단</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 컬럼 3: 라인별 -->
+                        <div class="mega_col">
+                            <h4 class="mega_title">라인별</h4>
+                            <ul class="mega_links_meun">
+                            <li><a href="#">전체보기</a></li>
+                            <li><a href="#">바운시 앤 펌</a></li>
+                            <li><a href="#">래디언C</a></li>
+                            <li><a href="#">워터뱅크 블루 히알루로닉</a></li>
+                            <li><a href="#">퍼펙트리뉴</a></li>
+                            <li><a href="#">슬리핑케어</a></li>
+                            <li><a href="#">크림스킨</a></li>
+                            <li><a href="#">옴므</a></li>
+                            <li><a href="#">기타</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mega_promo">
+                            <a href="#"><img src="images/imgi_2_240930_final_KR_Bouncy-Firm-Face-Sleeping-Mask_Eastern_GNB_BN.jpg" alt="이미지"></a>
+                            <p class="promo_badge">NEW ARRIVAL</p>
+                            <p class="promo_name">바운시 앤 펌 슬리핑 마스크</p>
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="has-mega">
+                    <a href="#">메이크업</a>
+                    <div class="mega mega-skincare">
+                        <div class="mega_inner mega_links_repeat2 mega_with_image">
+                            <!-- 컬럼 1: 페이스 -->
+                            <div class="mega_col meun4">
+                                <h4 class="mega_title">페이스</h4>
+                                <ul class="mega_links_meun">
+                                <li><a href="#">전체보기</a></li>
+                                <li><a href="#">프라이머/메이크업베이스</a></li>
+                                <li><a href="#">파운데이션/컨실러</a></li>
+                                <li><a href="#">쿠션</a></li>
+                                <li><a href="#">파우더/팩트</a></li>
+                                <li><a href="#">미용소품</a></li>
+                                 </ul>
+                            </div>
+
+                                <!-- 컬럼 2: 립 -->
+                             <div class="mega_col">
+                                <h4 class="mega_title">립</h4>
+                                <ul class="mega_links_meun">
+                                <li><a href="#">전체보기</a></li>
+                                <li><a href="#">립밤</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mega_promo">
+                            <a href="#"><img src="images/imgi_3_230428_neo-cushion_gnb_banner_pc.jpg" alt="이미지"></a>
+                            <p class="promo_badge">BEST SELLER</p>
+                            <p class="promo_name">네오쿠션_매트</p>
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <div class="icon">
+                    <a href="#"><img src="images/earth-americas-solid-full.svg" alt="언어 아이콘"></a>
+                    <a href="#"><img src="images/user-regular-full.svg" alt="마이페이지"></a>
+                    <a href="#"><img src="images/magnifying-glass-solid-full.svg" alt="검색"></a>
+            </div>
+        </header>
+        <main>
+            <section class="slide">
+                <h2 class="hide">슬라이드</h2>
+                    <div class="frame">
+                        <div class="imgbox">
+                            <img src="images/img1.jpg" alt="이미지1">
+                        </div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                <h2>WARER BANK<br>BLUE HYALURONIC CREAM</h2>
+                            </div>
+                            <div class="text-sub-title">
+                                <p>내 피부 타입과 컨디션에 맞춰진,<br>더 강력해진 장벽크림</p>
+                            </div>
+                            <div class="readmore">
+                                <a href="#">자세히보기 &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame">
+                        <div class="imgbox">
+                            <img src="images/img2.jpg" alt="이미지2">
+                        </div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                <h2>BOUNCY & FIRM<br>SLEEPING MASK</h2>
+                            </div>
+                            <div class="text-sub-title">
+                                <p>피오니 & 콜라겐 콤플렉스로&trade;<br>매일 아침 탱탱하고 빛나는 피부로 깨어나는<br>바운시 앤 펌 슬리핑 마스크 듀오</p>
+                            </div>
+                            <div class="readmore">
+                                <a href="#">자세히보기 &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame">
+                        <div class="imgbox">
+                            <img src="images/img3.jpg" alt="이미지3">
+                        </div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                <h2>NEW NEO<br>MATTE & GLOW</h2>
+                            </div>
+                            <div class="text-sub-title">
+                                <p>한 번의 터치로<br>*50시간 무너짐 없는 완벽한 피부로,<br>다시 태어난 NEW NEO</p>
+                            </div>
+                            <div class="readmore">
+                                <a href="#">자세히보기 &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="best-set">
+                <h2>BEST SELLER</h2>
+                <div class="best-set-group">
+                    <div class="best-img">
+                        <div class="best-group">
+                            <div class="best-box">
+                                <img src="images/imgi_14_241008_final_KR_cream_skin_bestseller-kv_960x1000.jpg" alt="이미지">
+                                <p class="best-text">BEST01</p>
+                                <p>CREAM SKIN<br>CERAPEPTIDE<br>REFINER</p>
+                            </div>
+                            <div class="best-box" hidden>
+                                <img src="images/imgi_15_250430_final_KR_WATER-BANK_main_bestseller_BN_1.jpg" alt="이미지">
+                                <p class="best-text">BEST02</p>
+                                <p>WATER BANK BLUE<br>MOISTUER CREAM</p>
+                            </div>
+                            <div class="best-box" hidden>
+                                <img src="images/imgi_3_230428_neo-cushion_gnb_banner_pc.jpg" alt="이미지">
+                                <p class="best-text">BEST03</p>
+                                <p>NEO CUSHION<br>MATTE</p>
+                            </div>
+                            <div class="best-box" hidden>
+                                <img src="images/imgi_17_main_bestseller_WSM-Banner01_kr_250715.jpg" alt="이미지">
+                                <p class="best-text">BEST04</p>
+                                <p>WATER SLEEPING<br>MASK</p>
+                            </div>
+                            <div class="best-box" hidden>
+                                <img src="images/imgi_18_LNG_03Best_banner_PC04_1_1.jpg" alt="이미지">
+                                <p class="best-text">BEST05</p>
+                                <p>LIP SLEEPING<br>MASK EX</p>
+                            </div>
+                            <div class="best-box" hidden>
+                                <img src="images/imgi_13_240618_final_KR_RADIAN-C-CREAM_main_bestseller_banner.jpg" alt="이미지">
+                                <p class="best-text">BEST06</p>
+                                <p>RADIAN-C<br>CREAM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-img2">
+                        <div class="group">
+                            <div class="cor-box-size cor-box1-color">
+                                <p class="text">크림 스킨 세라펩타이드&trade; 리파이너</p>
+                                <p>강력한 보습의 첫단계</p>
+                                <img src="images/imgi_20_241008_final_KR_Cream_Skin_bestseller-kv_500x600.png" alt="이미지">
+                            </div>
+                            <div class="cor-box-size cor-box2-color">
+                                <p class="text">워터뱅크 블루 히알루로닉 크림</p>
+                                <p>내 피부에 타입과 컨디션에 맞춰진, <br>더 강력해진 장벽크림</p>
+                                <img src="images/imgi_21_20230100_final_KR_WATER-BANK_main_bestsellerPD_1.png" alt="이미지">
+                            </div>
+                            <div class="cor-box-size cor-box3-color">
+                                <p class="text">네오 쿠션 매트</p>
+                                <p>Light FIT,LIght ON <br> 더욱 완벽해져 돌아온 NEW VEO</p>
+                                <img src="images/imgi_22_230426_final_LNG_KR_NEO_main_BestPD.png" alt="이미지">
+                            </div>
+                            <div class="cor-box-size cor-box4-color">
+                                <p class="text">워터 슬리핑 마스크</p>
+                                <p>낮동안 흐트러진 피부 리듬을 되찾고 <br> 맑고 투명한 피부로 가꿔주는 수분 마스크</p>
+                                <img src="images/imgi_23_250715_final_KR_main_bestseller_WSM-Banner02_kr_250715.png" alt="이미지">
+                            </div>
+                            <div class="cor-box-size cor-box5-color">
+                                <p class="text">립 슬리핑 마스크 EX</p>
+                                <p>입술 각질을 녹여주고,매끈 탱탱한 입술로 <br> 가꿔주는 립 슬리핑 마스크</p>
+                                <img src="images/imgi_24_LNG_03Best_Product_image04_2.png" alt="이미지">
+                            </div>
+                            <div class="cor-box-size cor-box6-color">
+                                <p class="text">레디언-C크림</p>
+                                <p>초강력 톤업부스터의 힘으로 <br> 피부코어부터 맑아지는 비타민 크림</p>
+                                <img src="images/imgi_17_LNG_03Best_Product_image05_2.png" alt="이미지">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="new-set">
+                <h2>NEW ARRIVALS</h2>
+                <div class="new-group">
+                <div class="new-box box-mar">
+                    <img src="images/imgi_21_250519_final_KR_PRN_AWO_PRODUCT_SERUM_main_BN_420x600.jpg" alt="이미지">
+                    <p>퍼펙트 리뉴 쓰리엑스 시그니쳐 <br>세럼 어드밴스드 </p>
+                    <p class="new-text">PERFECT RENEW 3X SIGNATURE SERUM</p>
+                    <span>#안티에이징세럼</span> <span>#NEW트리플샷세럼</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_22_241008_final_KR_bouncy_firm_lip_treatment_600x400.jpg" alt="이미지">
+                    <p>바운시 앤 펌 립 트리트먼트</p>
+                    <p class="new-text">BOUNCY & FIRM LIP TREATMENT</p>
+                    <span>#퍼밍 립</span> <span>#립 트리트먼트</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_23_241008_final_KR_bouncy_firm_eye_sleeping_mask_420x600_01.jpg" alt="이미지">
+                    <p>바운시 앤 펌 아이 슬리핑 마스크</p>
+                    <p class="new-text">BOUNCY & FIRM EYE SLEEPING MASK</p>
+                    <span>#즉각쿨링</span> <span>#저자극마스크</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_24_bouncy_firm_sleeping_mask_main_NewArrivals_600x400_1.jpg" alt="이미지">
+                    <p>바운시 앤 펌 슬리핑 마스크</p>
+                    <p class="new-text">BOUNCY & FIRM SLEEPING MASK</p>
+                    <span>#탱탱결광</span> <span>#퍼밍슬리핑마스크</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_25_241008_final_KR_neo_powder_420x600.jpg" alt="이미지">
+                    <p>네오 에센셜 블러링 피니시 파우더</p>
+                    <p class="new-text">NEO ESSENTAL BURRING FINISH POWDER</p>
+                    <span>#보습파우더</span> <span>#가루날림ZERO</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_30_20230100_final_KR_WATER-BANK_main_NewArrivals_CREAM.jpg" alt="이미지">
+                    <p>워터뱅크 블루 히알루로닉 모이스춰 크림</p>
+                    <p class="new-text">WATER BANK BLUE HYALURONIC MOISTURE CREAM</p>
+                    <span>#탄탄장벽</span> <span>#맑은피부광</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_31_20230100_final_KR_WATER-BANK_main_NewArrivals_inten.jpg" alt="이미지">
+                    <p>워터뱅크 블루 히알루로닉 인텐시브 크림</p>
+                    <p class="new-text">WATER BANK BLUE HYALURONIC INTENSIVE</p>
+                    <span>#장벽리페어</span> <span>#붉은기개선</span>
+                </div>
+                <div class="new-box">
+                    <img src="images/imgi_32_20230100_final_KR_WATER-BANK_main_NewArrivals_gel.jpg" alt="이미지">
+                    <p>워터뱅크 블루 히알루로닉 젤 크림</p>
+                    <p class="new-text">WATER BANK BLUE HYALURONIC GEL CREAM</p>
+                    <span>#유수분밸런스</span> <span>#수딩젤크림</span>
+                </div>
+                <div class="new-box"></div>
+                <div class="new-box"></div>
+                </div>
+            </section>
+
+            <section class="branding-slide">
+                <h2 class="hide">브랜드 슬라이드</h2>
+                <div class="branding-box">
+                    <img src="images/imgi_33_250113_final_KR_Sustainability_main_BN_PC.jpg" alt="이미지">
+                    <div class="text-post">
+                        <P class="text-post-title">LANEIGE AND SUSTAINABILITY</P>
+                        <p class="text-post-sub">더 나은 미래를 위한 라네즈의 3가지 약속</p><br>
+                        <a href="#" class="text-post-link">자세히 보기 <span>&gt;</span></a>
+                    </div>
+                </div>
+                <div class="branding-box">
+                    <img src="images/imgi_31_LNG_05Branded_banner_PC02.jpg" alt="이미지">
+                    <div class="text-post">
+                        <P class="text-post-title">BESPOKE NEO</P>
+                        <p class="text-post-sub">UPYO150 SHADES,<br>내 피부톤에 최적화된 컬러를 찾아보세요!</p><br>
+                        <a href="#" class="text-post-link">자세히 보기 <span>&gt;</span></a>
+                    </div>
+                </div>
+                <div class="branding-box">
+                    <img src="images/imgi_32_LNG_05Branded_banner_PC03.jpg" alt="이미지">
+                    <div class="text-post">
+                        <P class="text-post-title">LANWIGE MEETS ARTS</P>
+                        <p class="text-post-sub">라네즈가 선보이는 아트 프로젝트를 통해 <br>삶에 즐거운 변화를 느껴보세요</p><br>
+                        <a href="#" class="text-post-link">자세히 보기 <span>&gt;</span></a>
+                    </div>
+                </div>
+                <div class="branding-box">
+                    <img src="images/imgi_29_LNG_05Branded_banner_PC04.jpg" alt="이미지">
+                    <div class="text-post">
+                        <P class="text-post-title">LANEIGE BEAUTY & LIFE LAB</P>
+                        <p class="text-post-sub">다양한 분야의 전문가가 모여 건강한 아름다움과<br>새롭고 즐거운 뷰티 경험을 만들어 나갑니다.</p><br>
+                        <a href="#" class="text-post-link">자세히 보기 <span>&gt;</span></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <!-- 상단: 링크 / SNS + 언어 -->
+                <div class="footer-top">
+                <nav aria-label="푸터 링크">
+                    <ul class="footer-links">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">서비스이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리방침</a></li>
+                    <li><a href="#">뷰티포인트</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-cta">
+                    <ul class="social-list">
+                    <!-- 아이콘 이미지 -->
+                    <li><a href="#" aria-label="Instagram"><img src="images/imgi_4_sns_instagram_renew.png" alt="인스타"></a></li>
+                    <li><a href="#" aria-label="Facebook"><img src="images/imgi_5_sns_facebook_renew.png"  alt="페이스븍"></a></li>
+                    <li><a href="#" aria-label="YouTube"><img src="images/imgi_6_sns_youtube_renew.png"   alt="유튜브"></a></li>
+                    <li><a href="#" aria-label="TikTok"><img src="images/imgi_7_sns_tiktok_renew.png"     alt="틱톡"></a></li>
+                    </ul>
+
+                </div>
+                </div>
+
+                <!-- 하단: 고객센터 + 인증마크 -->
+                <div class="footer-bottom">
+                <div class="cs">
+                    <div class="cs-text">
+                    고객상담실(수신자요금부담) 080-023-5454
+                    <span class="divider" aria-hidden="true">|</span>
+                    운영시간 : 월~금 09:00 ~ 18:00
+                    </div><span class="divider" aria-hidden="true">|</span>
+                    <img class="wa-badge" src="images/imgi_35_wa-mark_250310.png" alt="웹 접근성 품질인증 마크">
+                </div>
+                
+
+                <label class="lang-select">
+                    <span class="sr-only">언어 선택</span>
+                    <select>
+                        <option selected>한국/한국어</option>
+                        <option>Global/English</option>
+                        <option>日本/日本語</option>
+                        <option>中國/中文</option>
+                    </select>
+                </label>
+                </div>
+
+                
+
+                <!-- 저작권 -->
+                <p class="copyright">© AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

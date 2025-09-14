@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주맥주 | 양조장 예약확인 | 신청</title>
+    <link rel="stylesheet" href="css/style07.css">
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+     <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/iogo.png" alt="로고">
+            </a>
+        </h1>
+        <div class="menu-area">
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">ABOUTUS</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="aboutus.html">제주맥주 회사이야기</a>
+                        </li>
+                        <li>
+                            <a href="products.html">제주맥주 소개</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ONLINE-SHOP</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">전체</a>
+                        </li>
+                        <li>
+                            <a href="#">누보시리즈</a>
+                        </li>
+                        <li>
+                            <a href="#">푸드</a>
+                        </li>
+                        <li>
+                            <a href="#">굿즈</a>
+                        </li>
+                        <li>
+                            <a href="#">사업자주문</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">BREWERYTOUR</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="brewery.html">양조장 소개</a>
+                        </li>
+                        <li>
+                            <a href="#">투어공간</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html">예약하기</a>
+                        </li>
+                        <li>
+                            <a href="reservation-manage.html">예약확인 및 취소</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">OEM/ODM</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="bg"></div>
+        </div>
+        <ul class="fol_r">
+            <li>
+                <a href="#">LOGIN</a>
+            </li>
+            <li>
+                <a href="#">JOIN</a>
+            </li>
+            <li>
+                <a href="#">CART</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="text-box">
+            <h2>제주맥주 양조장 예매하기</h2>
+            <p>별도의 회원가입 없이 진행하는 온라인 예매로 아름다운 여행되세요! <br> 먼저 예매하실 상품분류를 선택해주세요.</p>
+        </div>
+
+        <ul class="but-list">
+            <li data-target="tour" class="active">투어</li>
+            <li data-target="experience">체험</li>
+            <li data-target="class">클래스</li>
+        </ul>
+
+        <div class="box">
+            <div class="but-cont">
+                <div class="tour-cont">
+                    <img src="images/imgi_3_9c9ffff985d06.png" alt="투어">
+                    <p>양조장 투어 <br> (만7세 이상)</p>
+                </div>
+            </div>
+
+            <div class="but-cont">
+                <div class="experience-cont">
+                    <img src="images/imgi_3_541b043d3fe08.jpg" alt="체험">
+                    <p>나만의 전용잔 만들기 <br> (전 연령 참여 가능)</p>
+                </div>
+            </div>
+
+            <div class="but-cont">
+                <div class="class-cont">
+                    <img src="images/imgi_3_9b79ae1c7fe1a.jpg" alt="클래스">
+                    <p>클라스 테이스팅 <br> (만19세 이상)</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="rules">
+            <h3>이용 규정</h3>
+            <table>
+                <tr>
+                <th>필수사항</th>
+                <td>
+                    <p class="bor">맥주/논알콜 선택 시 신분증 필참</p>
+                    <p class="bor">프로그램 참여 가능 연령</p>
+                    <p class="bor">10분 이상 지각 시 참여 및 환불 불가</p>
+                </td>
+                <td>
+                    <p class="bor1">투어 <span class="highlight">만 7세 이상</span> (0세~6세는 보호자 동반 시에도 참여 불가)</p>
+                    <p class="bor1">체험 <span class="highlight">만 12세 이상</span></p>
+                    <p class="bor1">클래스 <span class="highlight">만 19세 이상</span></p>
+                    <p>시음 옵션은 지각 시에도 제공</p>
+                    <p>비행기 지연 및 결항, 건강상의 이유, 천재지변으로 인한 지각은 전화/채팅 문의</p>
+                </td>
+                </tr>
+            </table>
+
+            <h3>취소/환불정보(위약금안내)</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>변경기준</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="highli">사용예정자의 귀책사유로 인한 사용취소</td>
+                    <td class="highli">사용예정일 <strong>1일 전까지</strong> 취소일에 관계없이 전액 반환</td>
+                </tr>
+                <tr>
+                    <td class="highli">사용당일 취소</td>
+                    <td class="highli">취소/환불 불가</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="agree-box">
+                <input type="checkbox" id="agree">
+                <label for="agree">위 내용을 숙지했습니다.</label>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <ul class="foot-set">
+            <li>ABOUTUS</li>
+            <li>OURBEERS</li>
+            <li>RECRIT</li>
+            <li>CONTACT</li>
+            <li>IR</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>영상정보처리방침</li>
+        </ul>
+        <ul class="foot-set1">
+            <li>윤리경영규정</li>
+            <li>내부정보관리규정</li>
+        </ul>
+        <p>주식회사 한울앤제주  대표이사 김백산<br>본사 : 제주특별자치도 제주시 한림읍 금능농공길 62-11 성남사무실 : 경기 성남시 분당구 운중로 135, 7층<br>호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415 통신판매업신고번호 제 2020-제주한림-0101 호<br>고객센터 02-2235-5559 jejubeer@jejubeer.co.kr</p>
+        <p>경고 : 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다.<br>COPYRIGHT 2021@ JEJU BEER COMPANY</p>
+    </footer>
+
+    <!-- top 버튼 -->
+    <button id="toTop" class="to-top" aria-label="맨 위로">
+        <!-- 위쪽 화살표 SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12 8l6 6H6z"></path>
+        </svg>
+    </button>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

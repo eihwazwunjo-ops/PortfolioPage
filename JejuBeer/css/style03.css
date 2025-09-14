@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.hide{
+    display: none;
+}
+.center{
+    margin: 0 auto;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 100px;
+    background: #1CCAD3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; 
+    position: relative;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+footer{
+    width: 1440px;
+    margin: 0 auto;
+}
+header h1{
+    width: 200px;
+    padding: 30px 20px;
+    margin-right: 134px;
+}
+header h1 img{
+    width: 179px;
+    height: 47px;
+}
+/* 네비 */
+header nav{
+    width: 700px;
+    z-index: 999;
+}
+header nav .gnb{
+    display: flex;
+    gap: 89px;
+    margin-top: 0;
+    text-align: center;
+}
+.gnb li{
+     line-height: 2;
+     position: relative;
+     top: 0;
+}
+
+.submenu{
+  position: absolute;
+  top: 80px;
+  left: -50px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  width: 200px;
+}
+.submenu li a {
+  display: block;
+  font-size: 14px;
+  line-height: 2;
+}
+header nav .gnb li .submenu li a {
+  color: #333;
+}
+.bg{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    display: none;
+    z-index: 1;
+}
+header nav .gnb li a:hover{
+    color: #136bb8;
+}
+.fol_r{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.fol_r li{
+    float: left;
+    margin-right: 20px;
+}
+header nav .gnb li a, .fol_r li a{
+    color: #fff;
+}
+header nav .gnb li .submenu li a:hover {
+  color: #1CCAD3;
+}
+.submenu, .bg{
+    display: none;
+}
+
+.tex{
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 80%;    
+    margin: 102px auto;
+}
+
+.beer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.beer-card {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 40px 20px;
+    transition: 0.3s ease;
+    transition: all 1s;
+}
+
+.beer-card img {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.beer-card img {
+  transition: transform 0.4s ease;
+}
+
+.beer-card:hover img {
+  transform: scale(1.1);
+}
+
+.beer-card p {
+    font-size: 16px;
+    font-weight: 500; 
+}
+.jeju-lager:hover p{
+    color: #fff;
+}
+
+.jeju-brewery:hover p{
+    color: #fff;
+}
+
+.jeju-dark:hover p{
+    color: #fff;
+}
+
+.beer-card.jeju-white:hover {
+    background: #A8EBEC;
+}
+.beer-card.jeju-pale:hover {
+    background: #9ED0BF; 
+}
+.beer-card.jeju-dark:hover {
+    background: #67645F; 
+}
+.beer-card.nubo-mango:hover{
+    background: #FFE999;
+}
+.beer-card.jeju-nubo:hover{
+    background: #9CD9DD;
+}
+.beer-card.dol-chorom:hover{
+    background: #E7FCAE;
+}
+.beer-card.jeju-lager:hover{
+    background: #1E50B4;
+}
+.beer-card.jeju-brewery:hover{
+    background: #464646;
+}
+/* 푸터 */
+.foot-set{
+    display: flex;
+    gap: 44px;
+    text-align: center;
+    line-height: 3;
+    color: #C7C7C7;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.foot-set1{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    color: #C7C7C7;
+    margin-left: 5px;
+}
+footer p{
+    margin: 20px 0;
+    color: #C7C7C7;
+    margin-left: 5px;
+}
+
+/* Top 버튼 */
+.to-top{
+  position: fixed;
+  right: 24px; bottom: 24px;
+  width: 44px; height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: #1CCAD3; color: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.16);
+  cursor: pointer;
+  z-index: 1100;       
+  display: grid;
+  place-items: center; /*justify-items, align-items 축약형*/
+
+  /* 처음엔 숨김  */
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none; /*클릭 x*/
+  transition: opacity .25s ease, transform .25s ease;
+}
+.to-top:hover{ 
+  filter: brightness(1.05); 
+}
+.to-top.show{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+

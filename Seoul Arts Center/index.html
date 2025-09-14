@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예술의전당</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+    <nav>
+        <h1>
+            <a href="index.html">
+                <img src="images/imgi_38_logo1.svg" alt="로고">
+            </a>
+        </h1>
+        <ul class="gnb">
+            <li>
+                <a href="#">오페라하우스</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="opera_schedule.html">공연일정</a>
+                    </li>
+                    <li>
+                        <a href="#">좌석안내</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">음악당</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="music_schedule.html">공연일정</a>
+                    </li>
+                    <li>
+                        <a href="#">좌석안내</a>
+                    </li>
+                </ul>
+            </li>
+             <li>
+                <a href="#">미술관·박물관</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="exhibitc_schedule.html">전시일정</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">아카데미</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">아카데미</a>
+                    </li>
+                    <li>
+                        <a href="#">수강신청</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">방문·이용</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">편의서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">오시는길</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+    <section class="main-visual">
+        <h1 class="hide">영역 1</h1>
+    <div class="slider">
+      <img src="images/banner1.jpg" alt="배너1">
+      <img src="images/banner2.jpg" alt="배너2">
+      <img src="images/banner3.jpg" alt="배너3">
+    </div>
+    </section>
+    <section class="performance-section">
+        <h2>전체 공연 보기</h2>
+        <div class="performance-layout">
+            <div class="cards">
+                <div class="card">
+                    <a href="opera_schedule.html"><img src="images/imgi_1_b9e5e63f5fc5489d8aa5947634fea055.jpg" alt="오페라하우스">
+                    <p>오페라하우스</p></a>
+                </div>
+                <div class="card">
+                    <a href="music_schedule.html"><img src="images/imgi_9_b5a0766c-3532-4e23-8f47-5d7d402b35aa.jpg" alt="오페라하우스">
+                    <p>음악당</p></a>
+                </div>
+                <div class="card">
+                    <a href="exhibitc_schedule.html"><img src="images/imgi_1_6f85a09fb266407bac33a8c1469a30c9.jpg" alt="오페라하우스">
+                    <p>전시</p></a>
+                </div>
+            </div>
+            <div class="calendar-box">
+                <div class="calendar-header">
+                    <div class="calendar-left">
+                        <h3>캘린더</h3>
+                        <img src="images/imgi_67_icon_calendar.png" alt="아이콘">
+                        <p class="calendar-date">&lt; 2025.07 &gt;</p>
+                    </div>
+                </div>
+                <p class="calendar-desc">날짜를 누르시면 일정을 확인하실 수 있습니다.</p>
+                <table class="calendar">
+            <thead>
+                <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                </tr>
+                <tr>
+                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                </tr>
+                <tr>
+                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                </tr>
+                <tr>
+                <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                </tr>
+                <tr>
+                <td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </section>
+    <section class="opera-section">
+        <h1>오늘의 공연·전시</h1>
+    <ul class="opera-tabs">
+        <li data-target="opera" class="active">오페라하우스</li>
+        <li data-target="music">음악당</li>
+        <li data-target="exhibit">전시</li>
+    </ul>
+        <div class="opera-container">
+        <div class="opera opera-active">
+            <!-- 오페라하우스 -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_44d1e9fe1af847f2b6ac353286a9ad7c.jpeg" alt="그림">
+                        <p>돈 조반니</p>
+                        <p>장소 : 오페라극장</p>
+                        <p>기간 : 2025.07.04 ~ 2025.07.06</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_38fbf84ae8ee40ae92c9a53114765215.jpg" alt="그림">
+                        <p>가극 (부부 이야기)</p>
+                        <p>장소 : 자유소극장</p>
+                        <p>기간 : 2025.07.11 ~ 2025.07.13</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_5e678bedb3ce444ba208a99a438a2a69.jpg" alt="그림">
+                        <p>파리 오페라 발레 에투알 갈라 2025</p>
+                        <p>장소 : 오페라극장</p>
+                        <p>기간 : 2025-07-30 ~ 2025-08-01</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_59ebbc5282884deca477ee3bf415f30e.jpg" alt="그림">
+                        <p>백조의 호수</p>
+                        <p>장소 : 오페라극장</p>
+                        <p>기간 : 2025-07-19 ~ 2025-07-27</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="opera Music">
+            <!-- 음악당 -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_c8f0622f1d814758bfa40310c24f112f.jpg" alt="그림">
+                        <p>에올리아 앙상블 제2회 정기연주회</p>
+                        <p>장소 : IBK기업은행챔버홀</p>
+                        <p>기간 : 2025.07.01</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_ee332d8858344c06b7b507983b4f3f7a.jpg" alt="그림">
+                        <p>발밤아트 프로젝트 XXII</p>
+                        <p>장소 : 인춘아트홀</p>
+                        <p>기간 : 2025.07.20</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_5df810abaf7d4340b95d53ff4870f9b2.jpg" alt="그림">
+                        <p>이재완 피아노 독주회</p>
+                        <p>장소 : 리사이틀홀</p>
+                        <p>기간 : 2025.07.01</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_9a80b4025b874449813878ec81ac4662.jpg" alt="그림">
+                        <p>박종화 피아노 독주회</p>
+                        <p>장소 : 인춘아트홀</p>
+                        <p>기간 : 2025.07.18</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="opera Exhibition">
+            <!-- 전시 -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_6f85a09fb266407bac33a8c1469a30c9.jpg" alt="그림">
+                        <p>마르크 샤갈 특별전: 비욘드 타임</p>
+                        <p>장소 : 한가람미술관</p>
+                        <p>기간 : 2025.05.23 ~ 2025.09.21</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_eaa96d4f8f64415f88f7e74da20c34f6.jpg" alt="그림">
+                        <p>캐서린 번하드</p>
+                        <p>장소 : 한가람미술관</p>
+                        <p>기간 : 2025.06.06 ~ 2025.09.28</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_1_bad9b28b3247459e9f40c965dfcb9b1b.jpg" alt="그림">
+                        <p>우관중: 흑과 백 사이</p>
+                        <p>장소 : 서울서예박물관</p>
+                        <p>기간 : 2025.07.25 ~ 2025.10.19</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/imgi_21_6ba6b118bb2c25d620d21a48c0c8d9bc.jpg" alt="그림">
+                        <p>평보 서희환 : 보통의 걸음</p>
+                        <p>장소 : 서울서예박물관</p>
+                        <p>기간 : 2025.07.11 ~ 2025.10.12</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <section class="academy-section">
+        <h2>아카데미</h2>
+        <div class="academy-tabs">
+            <h2 class="notice-tab active">공지사항</h2>
+            <h2 class="faq-tab">FAQ</h2>
+        </div>
+        <div class="academy on">
+            <!-- 공지사항 -->
+            <ul>
+                <li>
+                    <span>2025.07.03</span>
+                    <p>[어린이] 여름특강 아트벤처(ArtVenture) 수강생 모집</p>
+                </li>
+                <li>
+                    <span>2025.07.01</span>
+                    <p>[서화] 2025년 어린이 원데이 클래스 수강생 모집</p>
+                </li>
+                <li>
+                    <span>2025.06.26</span>
+                    <p>[미술] 2025 가을 정규강좌 수강생 모집</p>
+                </li>
+                <li>
+                    <span>2025.06.05</span>
+                    <p>[인문] 2025 여름특강 수강생 모집</p>
+                </li>
+                <li>
+                    <span>2025.06.05</span>
+                    <p>[서화] 2025년 여름특강 수강생 모집</p>
+                </li>
+                <li>
+                    <span>2025.05.15</span>
+                    <p>[음악영재] 2025년 1월~4월 수강생 콩쿨 입상 공지</p>
+                </li>
+            </ul>
+        </div>
+        <div class="faq">
+            <!-- FAQ -->
+            <ul>
+                <li>
+                    수강생의 주차요금은 얼마입니까?
+                </li>
+                <li>
+                    강의실이 비어있으면 강좌 이후 시간에 사용할 수 있나요?
+                </li>
+                <li>
+                    대기자는 무엇이며 언제까지 신청할 수 있나요?
+                </li>
+                <li>
+                    미술실기아카데미 강좌변경이 가능합니까?
+                </li>
+                <li>
+                    개강 이후에도 강좌 등록을할 수 있나요?
+                </li>
+                <li>
+                    할인혜택은 어떤것이 있으며 어떻게 받을 수 있나요?
+                </li>
+            </ul>
+        </div>
+        <div class="inform-box">
+            <h2>알림판</h2>
+            <div class="inform-section">
+                <div class="inform">
+                    <div>
+                        <img src="images/imgi_18_887111bfe0ee219075bb1cfa0b7cdc4d.jpg" alt="그림">
+                    </div>
+                    <div>
+                        <img src="images/imgi_20_3d3e030b2e0bf684db81592f6c6fc283.jpg" alt="그림">
+                    </div>
+                    <div>
+                        <img src="images/imgi_32_3ccb6e3d8b4aa7bc9728f45346869195.jpg" alt="그림">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <h2>주요서비스</h2>
+            <div>
+                <img src="images/imgi_34_newaca_img1.png" alt="로고">
+                <p>수강신청</p>
+            </div>
+            <div class="location">
+                <img src="images/imgi_35_newaca_img4.png" alt="로고">
+                <p>위치 및 연락처</p>
+            </div>
+        </div>
+    </section>
+    <section class="news-sect">
+        <h2>예술의전당 소식</h2>
+        <div class="news-items">
+            <div>
+                <img src="images/imgi_35_6452323e3a308456e0a74bd072bea052.jpg" alt="그림">
+                <p>알림판</p>
+            </div>
+            <div>
+                <img src="images/imgi_47_notiVS2.svg" alt="그림">
+                <p>SNS</p>
+            </div>
+            <div>
+                <img src="images/imgi_48_notiVS3_1.gif" alt="그림">
+                <p>대관안내</p>
+            </div>
+            <div>
+                <img src="images/imgi_49_notiVS4.svg" alt="그림">
+                <p>회원서비스</p>
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer class="footer">
+    <div class="footer-menu">
+        <ul>
+        <li><a href="#">기관소개</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">정보공개</a></li>
+        <li><a href="#">이용약관 정책</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">유실물</a></li>
+        <li><a href="#">1:1 문의</a></li>
+        </ul>
+    </div>
+    <div class="footer-info">
+        <p>대표자 장현준 사업자등록번호 214-82-00264 통신판매업신고 서초 제 0706호</p>
+        <p>콜센터 1668-1352 (화~일:09:00~20:00 *매주 월요일 및 설,추석 당일 휴무 / 점심시간 12:00~13:00)</p>
+        <p>주소 (우) 06757 서울시 서초구 남부순환로 2406 예술의전당</p>
+        <p>copyrightⓒ2023 Seoul Arts Center. All rights reserved.</p>
+    </div>
+    </footer> 
+
+   <script src="js/script.js"></script>
+</body>
+</html>
