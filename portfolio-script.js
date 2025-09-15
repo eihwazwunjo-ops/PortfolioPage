@@ -78,30 +78,56 @@ $(document).ready(function() {
         }, 16));
     }
     
-    // Progress Bars Animation
+    // Progress Bars Animation (Integrated with skill counters)
     function setupProgressBars() {
-        const progressBars = $('.progress-fill');
+        const skillItems = $('.skill-item');
         
-        function animateProgressBars() {
-            progressBars.each(function() {
-                const bar = $(this);
-                const targetWidth = bar.data('width');
-                const elementTop = bar.offset().top;
-                const elementBottom = elementTop + bar.outerHeight();
+        function animateSkillItems() {
+            skillItems.each(function() {
+                const skillItem = $(this);
+                const progressBar = skillItem.find('.progress-fill');
+                const percentageElement = skillItem.find('.skill-percentage');
+                const elementTop = skillItem.offset().top;
+                const elementBottom = elementTop + skillItem.outerHeight();
                 const viewportTop = $(window).scrollTop();
                 const viewportBottom = viewportTop + $(window).height();
                 
                 if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                    if (!bar.hasClass('animated')) {
-                        bar.addClass('animated');
-                        bar.css('width', targetWidth);
+                    if (!progressBar.hasClass('animated') && !percentageElement.hasClass('counted')) {
+                        progressBar.addClass('animated');
+                        percentageElement.addClass('counted');
+                        
+                        const targetWidth = progressBar.data('width');
+                        const targetPercentage = parseInt(percentageElement.text());
+                        const duration = 2000; // 2초로 통일
+                        
+                        // 프로그래스 바 애니메이션
+                        progressBar.css('width', targetWidth);
+                        
+                        // 퍼센테이지 카운터 애니메이션
+                        animateCounter(percentageElement, 0, targetPercentage, duration);
                     }
                 }
             });
         }
         
-        $(window).on('scroll', throttle(animateProgressBars, 16));
-        animateProgressBars(); // Initial check
+        function animateCounter(element, start, end, duration) {
+            const range = end - start;
+            const increment = range / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(function() {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                element.text(Math.floor(current) + '%');
+            }, 16);
+        }
+        
+        $(window).on('scroll', throttle(animateSkillItems, 16));
+        animateSkillItems(); // Initial check
     }
     
     // Loading Screen
@@ -178,11 +204,8 @@ $(document).ready(function() {
     // Resume Button Functionality
     function setupResumeButton() {
         $('.resume-btn').on('click', function() {
-            // You can add functionality here to open a resume PDF or navigate to a resume page
-            alert('이력서 다운로드 기능을 구현할 수 있습니다.');
-            
-            // Example: Open a PDF in a new tab
-            // window.open('path/to/resume.pdf', '_blank');
+            // 이력서 버튼은 onclick 이벤트로 처리되므로 여기서는 아무것도 하지 않음
+            // onclick="openProject('./Resume.pdf')" 함수가 직접 처리함
         });
     }
     
@@ -193,13 +216,11 @@ $(document).ready(function() {
             const buttonText = $(this).text();
             
             if (buttonText === 'PC') {
-                // Open project in new tab
-                alert('PC 버전 프로젝트를 새 탭에서 열기');
-                // window.open('path/to/project', '_blank');
+                // PC 버튼은 onclick 이벤트로 처리되므로 여기서는 아무것도 하지 않음
+                // onclick="openProject()" 함수가 직접 처리함
             } else if (buttonText === '기존사이트') {
-                // Open original site
-                alert('기존 사이트를 새 탭에서 열기');
-                // window.open('path/to/original-site', '_blank');
+                // 기존사이트 버튼도 onclick 이벤트로 처리되므로 여기서는 아무것도 하지 않음
+                // onclick="openProject()" 함수가 직접 처리함
             }
         });
     }
@@ -248,46 +269,7 @@ $(document).ready(function() {
         setTimeout(typeWriter, 1000);
     }
     
-    // Skill Counter Animation
-    function setupSkillCounters() {
-        const skillPercentages = $('.skill-percentage');
-        
-        function animateCounters() {
-            skillPercentages.each(function() {
-                const counter = $(this);
-                const target = parseInt(counter.text());
-                const elementTop = counter.offset().top;
-                const elementBottom = elementTop + counter.outerHeight();
-                const viewportTop = $(window).scrollTop();
-                const viewportBottom = viewportTop + $(window).height();
-                
-                if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                    if (!counter.hasClass('counted')) {
-                        counter.addClass('counted');
-                        animateCounter(counter, 0, target, 2000);
-                    }
-                }
-            });
-        }
-        
-        function animateCounter(element, start, end, duration) {
-            const range = end - start;
-            const increment = range / (duration / 16);
-            let current = start;
-            
-            const timer = setInterval(function() {
-                current += increment;
-                if (current >= end) {
-                    current = end;
-                    clearInterval(timer);
-                }
-                element.text(Math.floor(current) + '%');
-            }, 16);
-        }
-        
-        $(window).on('scroll', throttle(animateCounters, 16));
-        animateCounters(); // Initial check
-    }
+    // Skill Counter Animation - Integrated into setupProgressBars
     
     // Parallax Effect for Hero Section
     function setupParallaxEffect() {
@@ -349,7 +331,6 @@ $(document).ready(function() {
     setupProjectButtons();
     setupSocialLinks();
     setupTypingEffect();
-    setupSkillCounters();
     setupParallaxEffect();
     setupMobileMenu();
     setupBackToTop();

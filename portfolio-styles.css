@@ -194,7 +194,7 @@ body {
     height: 100%;
     background-color: #000000;
     border-radius: 4px;
-    transition: width 1s ease-in-out;
+    transition: width 2s ease-in-out;
     width: 0;
 }
 
@@ -204,6 +204,11 @@ body {
     color: #000000;
     letter-spacing: 0;
     line-height: 11px;
+}
+
+/* Custom margin override */
+.mt-4 {
+    margin-top: 3.5rem !important;
 }
 
 /* Resume Button */
@@ -218,6 +223,7 @@ body {
     transition: all 0.3s ease;
     letter-spacing: 0;
     line-height: 11px;
+    margin-top: 30px;
 }
 
 .resume-btn:hover {
@@ -684,14 +690,14 @@ html {
     transform: scale(1.05);
 } */
 
-.skill-item:hover .progress-fill {
+/* .skill-item:hover .progress-fill {
     animation: progressFill 1s ease-in-out;
 }
 
 @keyframes progressFill {
     0% { width: 0; }
     100% { width: var(--target-width); }
-}
+} */
 
 /* Image Popup Styles */
 .image-popup-overlay {
