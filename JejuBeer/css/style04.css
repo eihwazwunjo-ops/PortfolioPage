@@ -120,7 +120,7 @@ header nav .gnb li .submenu li a:hover {
 }
 .beer-hero_inner{
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 83px auto;
   padding: 64px 174px;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;  /* 왼쪽 텍스트 오른쪽 이미지 */

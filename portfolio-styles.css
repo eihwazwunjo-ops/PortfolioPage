@@ -50,6 +50,16 @@ body {
     padding-top: 80px;
 }
 
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 21.78px;
+    margin-bottom: 1rem;
+}
+
 .hero-title {
     font-size: 50px;
     font-weight: 400;
@@ -475,6 +485,10 @@ body {
         font-size: 40px;
     }
     
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
     .project-title {
         font-size: 32px;
     }
@@ -522,6 +536,10 @@ body {
         font-size: 32px;
     }
     
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
     .project-title {
         font-size: 28px;
     }
@@ -552,6 +570,10 @@ body {
 @media (max-width: 576px) {
     .hero-title {
         font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 12px;
     }
     
     .project-title {

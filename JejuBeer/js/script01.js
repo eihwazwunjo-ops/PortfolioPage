@@ -11,19 +11,19 @@ $(document).ready(function(){
 
   $('body').addClass('page-loaded');
 
-  $(window).on('scroll',function(){
-		let scrollTop = $(window).scrollTop();
-		console.log(scrollTop);
-		if (scrollTop >= 100){
-			$('header').css({
-			backgroundColor: '#b0fbff'
-		});
-		}else if (scrollTop < 100){
-			$('header').css({
-			backgroundColor: '#fff'
-		});
-		}
-	});
+  // $(window).on('scroll',function(){
+	// 	let scrollTop = $(window).scrollTop();
+	// 	console.log(scrollTop);
+	// 	if (scrollTop >= 100){
+	// 		$('header').css({
+	// 		backgroundColor: '#b0fbff'
+	// 	});
+	// 	}else if (scrollTop < 100){
+	// 		$('header').css({
+	// 		backgroundColor: '#fff'
+	// 	});
+	// 	}
+	// });
   
   // Top 버튼
 $(function(){

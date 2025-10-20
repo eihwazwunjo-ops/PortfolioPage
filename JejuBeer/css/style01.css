@@ -326,7 +326,7 @@ main > div > p:nth-child(3){
   color: #fff;
   transform: rotateY(180deg);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .brand-symbol {
