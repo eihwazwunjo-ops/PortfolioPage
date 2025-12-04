@@ -501,6 +501,24 @@ function openProject(projectPath) {
     window.open(projectPath, '_blank');
 }
 
+// Mobile Project Open Function (모바일 크기 팝업)
+function openMobileProject(projectPath) {
+    // 모바일 기기 크기
+    const width = 450;
+    const height = 800;
+    
+    // 화면 중앙에 배치
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+    
+    // 모바일 크기로 팝업 창 열기
+    window.open(
+        projectPath,
+        '_blank',
+        `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
+    );
+}
+
 // Additional utility functions
 window.PortfolioUtils = {
     // Debounce function for search and other input events

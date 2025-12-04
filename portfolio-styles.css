@@ -264,6 +264,40 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Mobile Mockup Section */
+.mobile-mockup-section {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.mobile-mockup-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.iphone-frame {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.mobile-screenshot {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 32px;
+    z-index: 2;
+}
+
 .project-item {
     margin-bottom: 4rem;
     padding: 2rem 0;
@@ -528,6 +562,17 @@ body {
         left: 5%;
         width: 90%;
         height: 84%;
+    }
+    
+    .mobile-mockup-section {
+        text-align: center;
+    }
+    
+    .mobile-screenshot {
+        top: 4%;
+        left: 6%;
+        width: 88%;
+        height: 91%;
     }
 }
 
