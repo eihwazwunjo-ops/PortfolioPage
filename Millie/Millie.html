@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀리의서재</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Image/iong1.png" alt="서해문집" class="logo-img">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#today">투데이</a></li>
+                        <li><a href="#webtoon">웹툰웹소</a></li>
+                        <li><a href="#feed">피드</a></li>
+                        <li><a href="#library">내서재</a></li>
+                        <li><a href="#manage">관리</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <img src="Image/Magnifier.png" alt="검색" class="header-icon">
+                    <img src="Image/Menu.png" alt="메뉴" class="header-icon">
+                    <button class="btn-login">로그인/회원가입</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 배너 섹션 -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-slide">
+                <img src="Image/693296e8828e2.jpg" alt="배너 1" class="banner-image">
+                <div class="banner-text">
+                    <h2 class="banner-title">가속노화 VS 저속노화</h2>
+                    <p class="banner-subtitle">정답은 호르몬</p>
+                    <p class="banner-description">호르몬 관리로 10년 젊어지는법</p>
+                </div>
+                <button class="banner-arrow-left">‹</button>
+                <button class="banner-arrow-right">›</button>
+            </div>
+            <div class="banner-slide">
+                <img src="Image/693c0e083033e.jpg" alt="배너 2" class="banner-image">
+                <div class="banner-text">
+                    <h2 class="banner-title">죽은 줄 알았던 감각</h2>
+                    <p class="banner-subtitle">되찾아 드립니다</p>
+                    <p class="banner-description">센스를 기르는 7가지 사고 훈련법</p>
+                </div>
+                <button class="banner-arrow-left">‹</button>
+                <button class="banner-arrow-right">›</button>
+            </div>
+            <div class="banner-slide">
+                <img src="Image/693c1021e69c7.jpg" alt="배너 3" class="banner-image">
+                <div class="banner-text">
+                    <h2 class="banner-title">우리가 사랑한 히트곡</h2>
+                    <p class="banner-subtitle">누가 썼을까?</p>
+                </div>
+                <button class="banner-arrow-left">‹</button>
+                <button class="banner-arrow-right">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 밀리어워즈 섹션 -->
+    <section class="millie-awards">
+        <div class="millie-awards-container">
+            <div class="millie-awards-items">
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-dot black"></div>
+                        <img src="Image/imgp.webp" alt="밀리어워즈" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">밀리어워즈</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/692ce0d43b95a.png" alt="오늘의한문장" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">오늘의한문장</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/692ce16180f0b.png" alt="이벤트" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">이벤트</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/6830361be63eb.png" alt="숨은꿀팁" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">숨은꿀팁</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/692ce0ee528cb.png" alt="공개예정" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">공개예정</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/683035bb902f9.png" alt="새로들어온책" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">새로들어온책</p>
+                </div>
+                <div class="millie-awards-item">
+                    <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                        <div class="millie-awards-item-dot"></div>
+                        <img src="Image/683035a009bfd.png" alt="서점베스트" class="millie-awards-item-image">
+                    </div>
+                    <p class="millie-awards-item-text">서점베스트</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 도서 섹션 -->
+    <section class="books" id="books">
+        <div class="container">
+            <h2 class="section-title books-title">요즘 읽는 책</h2>
+            <p class="books-subtitle">이어서 읽어볼까요?</p>
+            <div class="books-box">
+                <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="Image/Rectangle 32962.png" alt="도서 1">
+                    </div>
+                    <div class="book-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <p class="progress-text">30%</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="Image/Rectangle 32963.png" alt="도서 2">
+                    </div>
+                    <div class="book-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 52%"></div>
+                        </div>
+                        <p class="progress-text">52%</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="Image/Rectangle 32964.png" alt="도서 3">
+                    </div>
+                    <div class="book-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 78%"></div>
+                        </div>
+                        <p class="progress-text">78%</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 추천 섹션 -->
+    <section class="recommendation">
+        <div class="container">
+            <h2 class="section-title recommendation-title-section">태성님을 위한 추천</h2>
+            <p class="recommendation-subtitle">지금 많이 읽고 있는 책들이에요!</p>
+            <div class="recommendation-wrapper" id="recommendationWrapper">
+                <div class="recommendation-books-left" id="recommendationBooksLeft" style="display: none;">
+                    <img src="Image/book22.png" alt="혼모노" class="recommendation-book" id="bookLeft">
+                </div>
+                <div class="recommendation-books-middle" id="recommendationBooksMiddle" style="display: none;">
+                    <img src="Image/img1.png" alt="책 1" class="recommendation-book" id="book1" data-book="orbit">
+                </div>
+                <div class="recommendation-books-middle2" id="recommendationBooksMiddle2" style="display: none;">
+                    <img src="Image/img2.png" alt="책 2" class="recommendation-book" id="book2-middle" data-book="station">
+                </div>
+                <div class="recommendation-box">
+                    <div class="recommendation-image">
+                        <img src="Image/ab86ed4d9c8145a2a8b29e3eb63796ff.webp" alt="추천 도서" id="recommendationMainImage">
+                    </div>
+                    <div class="recommendation-content" id="recommendationContent">
+                        <h3 class="recommendation-title">혼모노</h3>
+                        <p class="recommendation-author">성해나</p>
+                        <div class="recommendation-rating">
+                            <img src="Image/Star 1.png" alt="별점" class="star-icon">
+                            <span class="rating-text">3.5<span class="rating-date">(2025.09.29)</span></span>
+                        </div>
+                        <div class="recommendation-quote-group">
+                            <p class="recommendation-quote">논란의 감독님 팬이라는 게 죄인가요?<br>저도 모르겠어요.. 이게 사랑인지 공범인지.</p>
+                            <p class="recommendation-chapter">챕터 - 길티 클럽: 호랑이 만지기</p>
+                        </div>
+                        <p class="recommendation-description">천재 감독 '김곤'의 골수팬 '나'. 폐쇄형 팬클럽 '길티 클럽'에서 26명만이 그를 사랑할 수 있다. 엄격한 규정 아래, 오직 애정만 허락된 이곳에서</p>
+                    </div>
+                </div>
+                <div class="recommendation-books">
+                    <img src="Image/img1.png" alt="책 1" class="recommendation-book" id="book1-original" data-book="orbit">
+                    <img src="Image/img2.png" alt="책 2" class="recommendation-book" id="book2" data-book="station">
+                    <img src="Image/img3.png" alt="책 3" class="recommendation-book" id="book3" data-book="night">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 랭킹 섹션 -->
+    <section class="ranking">
+        <div class="container">
+            <div class="ranking-header">
+                <span class="ranking-title">밀리랭킹</span>
+                <span class="ranking-separator">| 도서종류</span>
+                <img src="Image/down-arr-0b293f1f10f97e5a2a744710ef0d1133.png" alt="화살표" class="ranking-arrow">
+            </div>
+                <div class="ranking-categories-wrapper">
+                    <div class="ranking-categories">
+                        <button class="category-btn active" data-category="theme">오늘의 테마</button>
+                        <button class="category-btn" data-category="general">종합</button>
+                        <button class="category-btn" data-category="novel">소설</button>
+                        <button class="category-btn" data-category="business">경제/경영</button>
+                        <button class="category-btn" data-category="self">자기계발</button>
+                        <button class="category-btn" data-category="poetry">시/에세이</button>
+                        <button class="category-btn" data-category="humanities">인문/교양</button>
+                        <button class="category-btn" data-category="hobby">취미/실용</button>
+                        <button class="category-btn" data-category="children">어린이/청소년</button>
+                        <button class="category-btn" data-category="magazine">매거진</button>
+                        <img src="Image/Arrow.png" alt="화살표" class="ranking-arrow-right" id="rankingArrow" style="display: none;">
+                    </div>
+                </div>
+            <div class="ranking-content" id="rankingContent" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/c79cf238276146d08fcccdd716d20276.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">AGI,천사인가 악마인가</h4>
+                        <p class="ranking-book-author">김대식</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/b02cf2a796724a369c1dcc961dd68252.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">두고 온 여름</h4>
+                        <p class="ranking-book-author">성해나</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/df995d26e31548538ab17855d77cb9ea.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">트렌드 코리아2026</h4>
+                        <p class="ranking-book-author">김난도 외11</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/f4ebb2e5184e4740994157debe01efd7.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">원씽(The One Thing)</h4>
+                        <p class="ranking-book-author">게리 켈러,제이 파파사 저</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ab86ed4d9c8145a2a8b29e3eb63796ff.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">혼모노</h4>
+                        <p class="ranking-book-author">성해나</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/78ea28ae1a104e7b94b2c7628c8d3623.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">더 센스: 당신도 센스가 있다</h4>
+                        <p class="ranking-book-author">호소다 다카히로</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentNovel" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/b02cf2a796724a369c1dcc961dd68252.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">두고 온 여름</h4>
+                        <p class="ranking-book-author">성해나</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ab86ed4d9c8145a2a8b29e3eb63796ff.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">혼모노</h4>
+                        <p class="ranking-book-author">성해나</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/d28ed812a7d6473fa5258747f21dd0c3.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">아무도 오지 않는 곳에서</h4>
+                        <p class="ranking-book-author">천선란</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ad16157b27964fdf900bb78c59a8add6.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">차일드 호더</h4>
+                        <p class="ranking-book-author">프리다 맥파든</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/b5e0d9af383e4d199957e495b4e1e88a.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">급류</h4>
+                        <p class="ranking-book-author">정대권</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/822cb6434f5e45c5869a79617c5767b1.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">녹나무의 파수꾼</h4>
+                        <p class="ranking-book-author">히가시노게이고</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentBusiness" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/df995d26e31548538ab17855d77cb9ea.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">트렌드 코리아2026</h4>
+                        <p class="ranking-book-author">김난도 외11</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/c79cf238276146d08fcccdd716d20276.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">AGI,천사인가 악마인가</h4>
+                        <p class="ranking-book-author">김대식</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/78ea28ae1a104e7b94b2c7628c8d3623.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">더 센스: 당신도 센스가 있다</h4>
+                        <p class="ranking-book-author">호소다 다카히로</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ffca3ecbb2144f9598c59dd5a3099608.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">결핍은 우리의 어떻게 변화<br>시키는가</h4>
+                        <p class="ranking-book-author">센딜 멀레이너선,엘다 샤퍼</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/fbd08911a31d4fb4914f686f5353b50f.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">머니 트렌드2026</h4>
+                        <p class="ranking-book-author">김도윤 외7</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/774514b747054faf98141b3c68651983.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">ETF 투자의 모든것</h4>
+                        <p class="ranking-book-author">저자</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentSelf" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/a6e485a910ea4edfaf89b9baa6f276d9.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">내가 가진것을 세상이<br>원하게 하라</h4>
+                        <p class="ranking-book-author">최인아</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/f4ebb2e5184e4740994157debe01efd7.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">원씽(The One Thing)</h4>
+                        <p class="ranking-book-author">게리 켈러,제이 파파사 저</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/82ad8a1b88124314b28c7c600d4da8e2.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">당신의 직관이 길을 안내한다</h4>
+                        <p class="ranking-book-author">에릭 존 켐벨</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ae57b646858c48f8bdc69865a6239006.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">행동하지 않으면 인생은<br>바뀌지 않는다</h4>
+                        <p class="ranking-book-author">브라이언 트레이시</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/a9d115d52faf4a20916154ea087c21b0.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">운명을 보는 기술</h4>
+                        <p class="ranking-book-author">저자</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/4c9f367b4e4c4790b70ee674cd29616e.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">저소비 생활</h4>
+                        <p class="ranking-book-author">가제노타미</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentPoetry" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/61fb1e4201a447f9b2cb276410900306.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">어른의 행복은 조용하다</h4>
+                        <p class="ranking-book-author">태수</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/af5770cb338b4df693a30eeb25d503c0.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">쓸 만한 인간</h4>
+                        <p class="ranking-book-author">박정민</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/64d97d2c34584a80bcad83ecb4ad9e7a.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">모든 걸음에는 이유가 있다</h4>
+                        <p class="ranking-book-author">김아영</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ccca9ceac5f2424c957e16b0e52e69b6.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">어른의 품위</h4>
+                        <p class="ranking-book-author">최서영</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/00c003ddf3ca495dacabe549b3b83d75.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">너를 아끼며 살아라</h4>
+                        <p class="ranking-book-author">나태주</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/c872d40651af4bd1b62a07265cb9a9f2.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">다정한 사람이 이긴다</h4>
+                        <p class="ranking-book-author">이해인</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentHumanities" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/cfa68dd93574494c8b8d6b4d07f2d9dd.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">독서 트렌드 리포트2025</h4>
+                        <p class="ranking-book-author">밀리 독서연구소</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/95c09317db784fd384c9e5caef4b0ae8.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">손자병법</h4>
+                        <p class="ranking-book-author">손자</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/1472de9673714e89b76f03d662b31ba6.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">멍천해지기 전에 읽는 뇌과학</h4>
+                        <p class="ranking-book-author">이인하</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/88e8560dddae470ba5ab7c9f7136cc77.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">청춘의 독서</h4>
+                        <p class="ranking-book-author">유시민</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/c8a216702ffa4fada6f4e50737950632.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">삶은 여전히 빛난다</h4>
+                        <p class="ranking-book-author">로랑스 드빌레르</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/45d2187679f54ef1be3af6b95cc411fc.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">오늘15분만,세네키</h4>
+                        <p class="ranking-book-author">밀리의서재</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentHobby" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/8eacd2ceef3e4fcfb78bcbc0427d9452.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">식물성 기름의 배신</h4>
+                        <p class="ranking-book-author">케서린 섀너핸</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/05d6e563ea8745c6abb156e3c9b3bfcc.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">부자 아빠의 행복 철학</h4>
+                        <p class="ranking-book-author">이주택</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/c213f877cf3746519374f825b0c05154.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">진짜 스페인은 시골에 있다</h4>
+                        <p class="ranking-book-author">문정훈</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/7683ef1da91e4d47a6766e0da266806c.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">현명한 부모가 꼭 알아야<br>할 대화법</h4>
+                        <p class="ranking-book-author">신의진</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/598422972af74540a615c4c782f4489f.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">아이의 잠재력을 이끄는<br>반응육아법</h4>
+                        <p class="ranking-book-author">김미정</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/d60db95ebdde45a4b184501a3a0ad973.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">저속노화 마인드셋</h4>
+                        <p class="ranking-book-author">정희원</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentChildren" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/b6f6b4d9b8e64649ae1519e1d8875561.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">좋아한다는 거짓말</h4>
+                        <p class="ranking-book-author">허진희</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/03edb02b44ea4fcd86dbe605a04166b5.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">주토피아2 스토리북(한글)</h4>
+                        <p class="ranking-book-author">Disney Books</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/4c2518b52e804b819dde02c382f10f4e.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">걱정을 없애는 방법</h4>
+                        <p class="ranking-book-author">안수민</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/b87fda3d9c5d474999c2d6a8d47cbbca.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">그래서 이런 지명이 생겼대요</h4>
+                        <p class="ranking-book-author">우리누리</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/6d9493bb7c8d4cee993ffe53ea83f012.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">세계를 건너 너에게 갈게</h4>
+                        <p class="ranking-book-author">이꽃님</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/44f3215b1bb6422a985899a5045ccded.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">주토피아 2:뱀 이야기(한글)</h4>
+                        <p class="ranking-book-author">Disney Books</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-content" id="rankingContentMagazine" style="display: none;">
+                <div class="ranking-images">
+                    <div class="ranking-book-item">
+                        <img src="Image/ba9d3e42a4e8429584539d62f38b1e58.webp" alt="책 1" class="ranking-image">
+                        <h4 class="ranking-book-title">매경이코노미 2339호</h4>
+                        <p class="ranking-book-author">매경이코노미 편집부</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/ee80c10f27224cc3a88b6d56c95c6574.webp" alt="책 2" class="ranking-image">
+                        <h4 class="ranking-book-title">한경비즈니스 1567호 :<br>2025.12.08</h4>
+                        <p class="ranking-book-author">한경비즈니스 편집부</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/c8930d3bdf484bb998d99446dfcc8045.webp" alt="책 3" class="ranking-image">
+                        <h4 class="ranking-book-title">싱글즈 Singles 2025.12</h4>
+                        <p class="ranking-book-author">싱글즈 편집부</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/76a93808f0c14520ad3eece207c085a0.webp" alt="책 4" class="ranking-image">
+                        <h4 class="ranking-book-title">더스쿠프The SCOOP</h4>
+                        <p class="ranking-book-author">더스쿠프 편집부</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/a148d0a058b14f1db5ef13980a2ecc03.webp" alt="책 5" class="ranking-image">
+                        <h4 class="ranking-book-title">씨네21No.1536:2025.12.23</h4>
+                        <p class="ranking-book-author">씨네21편집부</p>
+                    </div>
+                    <div class="ranking-book-item">
+                        <img src="Image/f95ace1c4db6410bad92632a43069a62.webp" alt="책 6" class="ranking-image">
+                        <h4 class="ranking-book-title">매경이코노미2338호</h4>
+                        <p class="ranking-book-author">매경이코노미 편집부</p>
+                    </div>
+                </div>
+            </div>
+            <a href="commute-reading.html" style="text-decoration: none; color: inherit;">
+                <div class="ranking-banner" style="cursor: pointer;">
+                    <h3 class="banner-title">출퇴근 30분 독서</h3>
+                    <p class="banner-subtitle">짧지만 깊게 읽는 출퇴근 필독서</p>
+                    <p class="banner-count">12권</p>
+                </div>
+            </a>
+            <div class="ranking-small-banners">
+                <div class="small-banner">
+                    <h3 class="small-banner-title">주말 몰입 소설</h3>
+                    <p class="small-banner-subtitle">시간 가는 줄 모르는 페이지터너</p>
+                    <p class="small-banner-count">8권</p>
+                </div>
+                <div class="small-banner">
+                    <h3 class="small-banner-title">밤에 읽는 추리소설</h3>
+                    <p class="small-banner-subtitle">잠 못 드는 스릴러 컬렉션</p>
+                    <p class="small-banner-count">9권</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 신간 섹션 -->
+    <section class="new-books">
+        <div class="container">
+            <h2 class="new-books-title">신간 둘러보기</h2>
+            <p class="new-books-subtitle">아직 읽지 않은 새로운 이야기</p>
+            <div class="new-books-categories">
+                <button class="category-btn active">종합</button>
+                <button class="category-btn">소설</button>
+                <button class="category-btn">경제/경영</button>
+                <button class="category-btn">자기계발</button>
+                <button class="category-btn">시/에세이</button>
+                <button class="category-btn">인문/교양</button>
+                <button class="category-btn">취미/실용</button>
+                <button class="category-btn">어린이/청소년</button>
+                <button class="category-btn">매거진</button>
+            </div>
+            <div class="new-books-grid">
+                <div class="new-book-card" style="background-color: #F5F3F9;">
+                    <div class="new-book-content">
+                        <p class="new-book-text">우리는 모두<br>천문학자로 태어난다</p>
+                        <p class="new-book-author">지배웅</p>
+                    </div>
+                    <img src="Image/img4.png" alt="도서 1" class="new-book-image">
+                    <div class="new-book-top">
+                        <div class="new-book-bottom-content">
+                            <div class="new-book-bottom-text">
+                                <p class="new-book-discovery">
+                                    <img src="Image/blink.31a0650ca110e7f03059e568f6f95db2.png" alt="밀리의발견" class="new-book-icon">밀리의발견
+                                </p>
+                                <p class="new-book-description">별과 우주에 관한 가장 인간적인 이야기</p>
+                                <div class="new-book-tags">
+                                    <span class="new-book-tag">#천문학</span>
+                                    <span class="new-book-tag">#우주</span>
+                                    <span class="new-book-tag">#오아시스</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-book-card" style="background-color: #E6FCFF;">
+                    <div class="new-book-content">
+                        <p class="new-book-text">하루 15분<br>호르몬의 혁명</p>
+                        <p class="new-book-author">안철우</p>
+                    </div>
+                    <img src="Image/img6.png" alt="도서 2" class="new-book-image">
+                    <div class="new-book-top">
+                        <div class="new-book-bottom-content">
+                            <div class="new-book-bottom-text">
+                                <p class="new-book-discovery">
+                                    <img src="Image/blink.31a0650ca110e7f03059e568f6f95db2.png" alt="밀리의발견" class="new-book-icon">밀리의발견
+                                </p>
+                                <p class="new-book-description">우리몸의 관탑제, 호르몬 관리로 10년 젊어지는 루틴</p>
+                                <div class="new-book-tags">
+                                    <span class="new-book-tag">#건강</span>
+                                    <span class="new-book-tag">#호르몬</span>
+                                    <span class="new-book-tag">#저속노하</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-book-card" style="background-color: #FFF4E4;">
+                    <div class="new-book-content">
+                        <p class="new-book-text">운명을 보는 기술</p>
+                        <p class="new-book-author">박성준</p>
+                    </div>
+                    <img src="Image/img5.png" alt="도서 3" class="new-book-image">
+                    <div class="new-book-top">
+                        <div class="new-book-bottom-content">
+                            <div class="new-book-bottom-text">
+                                <p class="new-book-discovery">
+                                    <img src="Image/blink.31a0650ca110e7f03059e568f6f95db2.png" alt="밀리의발견" class="new-book-icon">밀리의발견
+                                </p>
+                                <p class="new-book-description">역술가 박성준이 알려주는 사주,관상,풍수의 모든 것</p>
+                                <div class="new-book-tags">
+                                    <span class="new-book-tag">#사주</span>
+                                    <span class="new-book-tag">#관상</span>
+                                    <span class="new-book-tag">#운명</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-company">(주) kt밀리의서재</p>
+                    <div class="footer-business-info">
+                        <span class="footer-business-text">사업자 정보 펼쳐보기</span>
+                        <img src="Image/down-arr-0b293f1f10f97e5a2a744710ef0d1133.png" alt="화살표" class="footer-arrow">
+                    </div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">회사 소개</a>
+                        <a href="#" class="footer-link">이용약관</a>
+                        <a href="#" class="footer-link">개인정보처리방침</a>
+                        <a href="#" class="footer-link">청소년 보호정책</a>
+                        <a href="#" class="footer-link">공지사항</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                    </div>
+                    <p class="footer-copyright">© 2025 KT Millie's Library. All rights reserved.</p>
+                    <p class="footer-certification">정보보호관리체계ISMS 인증획득| 인증범위 :(주) 밀리의서재 대고객서비스| 유효기간 : 2023-05-03-2026-05-02</p>
+                </div>
+                <div class="footer-sns">
+                    <a href="#" class="footer-sns-link">
+                        <img src="Image/sns-instagram-ba9357bd6c1bb50854389e9f15f76d76.png" alt="인스타그램" class="footer-sns-icon">
+                    </a>
+                    <a href="#" class="footer-sns-link">
+                        <img src="Image/sns-kakaotalk-fa50e1326498ebcac6ba4a1e68f66882.png" alt="카카오톡" class="footer-sns-icon">
+                    </a>
+                    <a href="#" class="footer-sns-link">
+                        <img src="Image/sns-youtube-b399a84a750e221ded9fef98ddeca396.png" alt="유튜브" class="footer-sns-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

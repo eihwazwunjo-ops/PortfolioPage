@@ -264,6 +264,42 @@ body {
     margin-bottom: 3rem;
 }
 
+/* PC Mockup Section for 마음일기 */
+.pc-mockup-section-maeum {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.pc-mockup-maeum {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    text-align: right;
+}
+
+.millie-container {
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
+    width: 97%;
+    height: 87%;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 2;
+    clip-path: inset(0 0 0 0);
+}
+
+.millie-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    display: block;
+    transition: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* Mobile Mockup Section */
 .mobile-mockup-section {
     margin-bottom: 4rem;

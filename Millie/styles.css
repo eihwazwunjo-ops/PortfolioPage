@@ -1,0 +1,1563 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F8F9F7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 40px;
+}
+
+.header-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 150px;
+    height: 56px;
+    display: block;
+    object-fit: contain;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #6E7E66;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #444;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.btn-login:hover {
+    color: #000;
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 0 20px;
+}
+
+.banner-container {
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slide {
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: none;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+.banner-container:hover .banner-arrow-left,
+.banner-container:hover .banner-arrow-right {
+    opacity: 1;
+}
+
+.banner-arrow-left,
+.banner-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-arrow-left {
+    left: 20px;
+}
+
+.banner-arrow-right {
+    right: 20px;
+}
+
+.banner-arrow-left:hover,
+.banner-arrow-right:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.banner-title {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4px 0 0 0;
+    line-height: 1.2;
+}
+
+.banner-description {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+    line-height: 1.4;
+}
+
+/* 밀리어워즈 섹션 */
+.millie-awards {
+    padding: 80px 0;
+    background-color: #F8F9F7;
+}
+
+.millie-awards-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.millie-awards-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.millie-awards-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.millie-awards-dot.black {
+    background-color: #000000;
+}
+
+.millie-awards-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.millie-awards-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.millie-awards-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.millie-awards-item-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.millie-awards-item-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ededed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.millie-awards-item-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    margin-top: 19px;
+}
+
+/* 출퇴근 독서 페이지 배너 */
+.commute-banner {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #F8F9F7;
+    display: flex;
+    justify-content: center;
+}
+
+.commute-banner-container {
+    width: 1200px;
+    height: 300px;
+    background-color: #8B9A8D;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.commute-banner-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    /* margin-bottom: 12px; */
+}
+
+.commute-banner-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* 출퇴근 독서 필터/정렬 섹션 */
+.commute-filter {
+    width: 100%;
+    padding-top: 40px;
+    background-color: #F8F9F7;
+    display: flex;
+    justify-content: center;
+}
+
+.commute-filter-container {
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.commute-filter-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+}
+
+.commute-filter-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.commute-filter-text {
+    font-size: 20px;
+    color: #111;
+}
+
+.commute-filter-text.medium {
+    font-weight: 500;
+}
+
+.commute-filter-text.regular {
+    font-weight: 400;
+}
+
+.commute-filter-arrow {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+/* 출퇴근 독서 책 카드 섹션 */
+.commute-books {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #F8F9F7;
+    display: flex;
+    justify-content: center;
+}
+
+.commute-books-container {
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.commute-book-card {
+    width: 240px;
+    height: 418px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commute-book-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.commute-book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.commute-book-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.commute-book-author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+}
+
+.commute-book-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.commute-book-star {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.commute-book-rating-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+}
+
+.commute-book-time-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-left: 4px;
+}
+
+.commute-book-time {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+}
+
+/* 출퇴근 독서 더보기 버튼 */
+.commute-more {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #F8F9F7;
+    display: flex;
+    justify-content: center;
+}
+
+.commute-more-container {
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.commute-more-btn {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+/* 다른테마 둘러보기 섹션 */
+.other-themes {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #F8F9F7;
+    display: flex;
+    justify-content: center;
+}
+
+.other-themes-container {
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.other-themes-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+}
+
+.other-themes-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.other-theme-card {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.other-theme-card:first-child:hover {
+    background-color: #E3F2FD;
+}
+
+.other-theme-card:last-child:hover {
+    background-color: #F3E5F5;
+}
+
+.other-theme-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+}
+
+.other-theme-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+}
+
+.other-theme-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: transparent;
+    color: #333;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #667eea;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+/* Books Section */
+.books {
+    padding: 5rem 0 0 0;
+    background-color: #F8F9F7;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.books-title {
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.books-subtitle {
+    font-size: 16px;
+    color: #767676;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.books-box {
+    width: 1200px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.book-card {
+    background: white;
+    border-radius: 10px;
+    overflow: visible;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-progress {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #6E7E66;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* Recommendation Section */
+.recommendation {
+    padding: 5rem 0;
+    background-color: #F8F9F7;
+}
+
+.recommendation-title-section {
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.recommendation-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.recommendation-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+}
+
+.recommendation-books-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.recommendation-books-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.recommendation-books-middle2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.recommendation-books-left2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.recommendation-box {
+    width: 636px;
+    height: 349px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.recommendation-books {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.recommendation-book {
+    width: 71px;
+    height: 367px;
+    object-fit: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.recommendation-book:hover {
+    opacity: 0.8;
+}
+
+.recommendation-image {
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.recommendation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recommendation-rating {
+    margin-bottom: 20px;
+}
+
+.recommendation-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.recommendation-author {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.recommendation-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.rating-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1.2;
+}
+
+.rating-date {
+    color: #999;
+}
+
+.recommendation-quote-group {
+    margin: 0;
+}
+
+.recommendation-quote {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.5;
+}
+
+.recommendation-chapter {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4;
+}
+
+.recommendation-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+    margin: 0;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+/* Ranking Section */
+.ranking {
+    padding: 3rem 0;
+    background-color: #F8F9F7;
+}
+
+.ranking-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ranking-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+}
+
+.ranking-separator {
+    font-size: 24px;
+    font-weight: 400;
+    color: #767676;
+    line-height: 11px;
+    height: 11px;
+    display: inline-block;
+}
+
+.ranking-arrow {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-left: -7px;
+}
+
+.ranking-categories {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.ranking-categories-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.category-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.category-btn.active {
+    background-color: #5B6B5D;
+    color: #ffffff;
+    border-color: #5B6B5D;
+}
+
+.category-btn.active:hover {
+    opacity: 1;
+}
+
+.category-btn:hover {
+    opacity: 0.8;
+}
+
+.ranking-banner {
+    width: 750px;
+    height: 160px;
+    background-color: #8B9A8D;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+.banner-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+.ranking-small-banners {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.small-banner {
+    width: 369px;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.small-banner:first-child:hover {
+    background-color: #E3F2FD;
+}
+
+.small-banner:last-child:hover {
+    background-color: #F3E5F5;
+}
+
+/* 밀리랭킹 콘텐츠 */
+.ranking-content {
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px auto 0;
+}
+
+.ranking-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.ranking-book-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.ranking-image {
+    width: 164px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ranking-book-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.ranking-book-author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    margin: 0;
+    margin-top: 0;
+}
+
+.small-banner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.small-banner-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+.small-banner-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+.book-info {
+    padding: 1.5rem;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.book-author {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    padding: 2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo-img {
+    width: 200px;
+    height: 70px;
+    display: block;
+    object-fit: contain;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #767676;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-copyright {
+    text-align: center;
+    /* padding-top: 2rem;/ */
+    color: #95a5a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* New Books Section */
+.new-books {
+    padding: 3rem 0;
+    background-color: #F8F9F7;
+}
+
+.new-books-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    text-align: left;
+    margin: 0;
+    /* margin-bottom: 8px; */
+}
+
+.new-books-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.new-books-categories {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.new-books-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.new-book-card {
+    width: 360px;
+    height: 280px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.new-book-content {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.new-book-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.new-book-author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    margin: 0;
+    line-height: 12px;
+}
+
+.new-book-image {
+    width: 122px;
+    height: 161px;
+    object-fit: cover;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 1;
+}
+
+.new-book-top {
+    width: 360px;
+    height: 105px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.new-book-bottom-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.new-book-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.new-book-bottom-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.new-book-discovery {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.new-book-description {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.new-book-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+}
+
+.new-book-tag {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    border: 1px solid #767676;
+    border-radius: 12px;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+}
+
+/* Footer Section */
+.footer {
+    border-top: 1px solid #ccc;
+    padding: 3rem 0;
+    background-color: #F8F9F7;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.footer-sns {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-sns-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-sns-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.ranking-categories-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ranking-arrow-right {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.footer-company {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+.footer-business-info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.footer-business-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.footer-arrow {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-certification {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+    margin: 0;
+}
+
