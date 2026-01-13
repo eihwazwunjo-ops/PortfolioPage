@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라운드랩 - ROUND LAB</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo_.png" alt="라운드랩 로고">
+            </div>
+            <nav class="nav-menu">
+                <a href="shop.html">SHOP</a>
+                <a href="#">EVENT</a>
+                <a href="#">REVIEW</a>
+                <a href="press.html">PRESS</a>
+                <a href="#">BRABD</a>
+                <a href="#">C/S CENTER</a>
+            </nav>
+            <div class="header-right">
+                <div class="user-menu">
+                    <a href="#">LOGIN</a>
+                    <a href="#">JOIN</a>
+                    <a href="#">MY PAGE</a>
+                </div>
+                <div class="header-icons">
+                    <img src="image/search-refraction-g.png" alt="검색" class="header-icon">
+                    <img src="image/shopping-bag-g.png" alt="장바구니" class="header-icon">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 배너 -->
+    <section class="main-banner">
+        <div class="banner-slide active">
+            <img src="image/2025_pc_main_banner_clean.jpg" alt="메인 배너">
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="banner-slide">
+            <img src="image/2025_pc_main_banner_vita.jpg" alt="메인 배너">
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="banner-slide">
+            <img src="image/2025_pcmain_banner_01.jpg" alt="메인 배너">
+            <div class="banner-overlay"></div>
+        </div>
+        <button class="banner-arrow left-arrow" id="prevArrow">
+            <img src="image/Arrow2.png" alt="이전">
+        </button>
+        <button class="banner-arrow right-arrow" id="nextArrow">
+            <img src="image/Arrow1.png" alt="다음">
+        </button>
+    </section>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <!-- 메인 타이틀 섹션 -->
+        <section class="main-title-section">
+            <h2 class="better-skin-title">BETTER SKIN, BETTER ROUND</h2>
+            <h1 class="main-title">피부와 세상을 변화시키는<br>매일의 힘, 라운드랩</h1>
+            <p class="main-subtitle">지친 하루의 끝, 나를 웃음 짓게 하는 소소한 행복처럼 삶의 휴식이 필요한 당신에게<br>피부를 위한 다정한 쉬어감을 제안합니다.</p>
+        </section>
+
+        <!-- BETTER SKIN 섹션 -->
+        <section class="better-skin-section">
+            <!-- 제품 라인 선택 버튼 -->
+            <div class="product-line-buttons">
+                <button class="line-btn active">1025 독도</button>
+                <button class="line-btn">자작나무 수분</button>
+                <button class="line-btn">소나무 진정 시카</button>
+                <a href="shop.html" class="view-all-line">
+                    전체 라인 보기
+                    <img src="image/rightG.png" alt="화살표">
+                </a>
+            </div>
+
+            <!-- 제품 카드 섹션 -->
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="image/img1.png" alt="1025 독도 토너">
+                    </div>
+                    <h3 class="product-title">1025 독도 토너 대용량 500ml</h3>
+                    <p class="product-description">민감 피부도 걱정없이 저자극 결 케어</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="image/img2.png" alt="독도 토너 세트">
+                    </div>
+                    <h3 class="product-title">1025 독도 토너 + 독도 로션 200ml 2종 세트</h3>
+                    <p class="product-description">민감 피부 맞춤 저자극 로션 + 토너</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="image/img3.png" alt="독도 클렌저">
+                    </div>
+                    <h3 class="product-title">1025 독도 클렌저 150ml</h3>
+                    <p class="product-description">초미세먼지까지 깨끗하게 클렌징</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 신제품 섹션 -->
+        <section class="new-products-section">
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-bg-image">
+                        <img src="image/img5.png" alt="신제품 배경">
+                        <div class="section-header">
+                            <div class="section-title-wrapper">
+                                <h2 class="section-title">신제품</h2>
+                                <p class="section-subtitle">피부 고민에 맞춘 새로운 솔루션을 만나보세요</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-items-list">
+                        <img src="image/left.png" alt="왼쪽 화살표" class="product-nav-arrow left-arrow">
+                        <div class="product-item-card">
+                            <img src="image/ca93abf351a905c037eafacb72cdc9ee.jpg" alt="제품 1">
+                            <p>동백 딥 콜라겐 젤리 팩 클렌저</p>
+                        </div>
+                        <div class="product-item-card">
+                            <img src="image/e2f5b5177470cc7ee0c74509dd97b5b9.jpg" alt="제품 2">
+                            <p>시카 딥 포어 클레이 팩 클렌저</p>
+                        </div>
+                        <div class="product-item-card">
+                            <img src="image/8860bc0cf80ba9ef7c102b823e3bb595.jpg" alt="제품 3">
+                            <p>자작나무 수분 더블 겔 마스크</p>
+                        </div>
+                        <img src="image/right.png" alt="오른쪽 화살표" class="product-nav-arrow right-arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 베스트 상품 섹션 -->
+        <section class="best-products-section">
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-bg-image">
+                        <img src="image/img4.png" alt="베스트 상품 배경">
+                        <div class="section-header">
+                            <div class="section-title-wrapper">
+                                <h2 class="section-title">베스트 상품</h2>
+                                <p class="section-subtitle">가장 많은 사랑을 받는 라운드랩의 대표 제품</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-items-list">
+                        <img src="image/left.png" alt="왼쪽 화살표" class="product-nav-arrow left-arrow">
+                        <div class="product-item-card">
+                            <img src="image/39a271609a8788ab6cfc0c644ac85088.jpg" alt="제품 1">
+                            <p>1025 독도 토너</p>
+                        </div>
+                        <div class="product-item-card">
+                            <img src="image/6a734fd253f4fa94d1aea82d57174cd1.jpg" alt="제품 2">
+                            <p>자작나무 수분 톤업 선크림</p>
+                        </div>
+                        <div class="product-item-card">
+                            <img src="image/710f51a23448462d0d36fec72b767157.jpg" alt="제품 3">
+                            <p>자작나무 무기자차 선크림</p>
+                        </div>
+                        <img src="image/right.png" alt="오른쪽 화살표" class="product-nav-arrow right-arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY 섹션 -->
+        <section class="story-section">
+            <h2 class="section-title">STORY</h2>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="image/story_banner_backimg_01.jpg" alt="스토리 배경">
+                </div>
+                <div class="story-text-overlay">
+                    <div class="story-text-content">
+                        <h3 class="story-title">피부가 좋아지는 화장품</h3>
+                        <p class="story-description">라운드랩은 우리가 살아가고 있는 동그란 지구에서 만날 수 있는 신선하고 정직한 원료를 바탕으로 피부가 좋아지는 화장품 만듭니다.</p>
+                        <a href="story.html" class="story-btn">
+                            GO STORY
+                            <img src="image/Arrow.png" alt="화살표" class="story-arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAGAZINE 섹션 -->
+        <section class="magazine-section">
+            <div class="section-header">
+                <h2 class="section-title">MAGAZINE</h2>
+                <p class="section-subtitle">라운드랩의 스킨케어 스토리와 뷰티 팁을 만나보세요</p>
+            </div>
+            <div class="magazine-grid">
+                <div class="magazine-left">
+                    <div class="magazine-item item-654-246">
+                        <img src="image/d7c8b8cf78f707190a272dc221cca536.jpg" alt="매거진 1">
+                        <div class="magazine-overlay">
+                            <h3>라운드랩, '해풍쑥 진정세럼 기획세트', 화해 쇼핑 단독 출시</h3>
+                            <p>라운드랩, '해풍쑥 진정세럼 기획세트',화해 쇼핑 단독 출시저자극 스킨케어 브랜드 라운드랩(ROUND LAB)</p>
+                        </div>
+                    </div>
+                    <div class="magazine-item item-654-246">
+                        <img src="image/5e63b06ce557c04bc71b1af9355b9642.jpg" alt="매거진 2">
+                        <div class="magazine-overlay">
+                            <h3>라운드랩, '약콩 영양 토너', 올리브영 입점</h3>
+                            <p>라운드랩, '약콩 영양 토너',올리브영 입점서린컴퍼니㈜에서 선보이는 브랜드 라운드랩(ROUND LAB)의'약콩</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="magazine-right">
+                    <div class="magazine-item item-362-504">
+                        <img src="image/7c6c92400d850c239124e162538f8895.jpg" alt="매거진 3">
+                        <div class="magazine-overlay">
+                            <h3>라운드랩, 팀앤팀 2021 물을 위한 기부</h3>
+                            <p>라운드랩, 수분밀착 자작나무 수분 선크림리뉴얼 출시</p>
+                        </div>
+                    </div>
+                    <div class="magazine-item item-280-504">
+                        <img src="image/5835862eb54fd66af797c770b0715b5c.jpg" alt="매거진 4">
+                        <div class="magazine-overlay">
+                            <h3>라운드랩, '약콩 영양 토너"</h3>
+                            <p>라운드랩, '약콩 영양 토너',올리브영 입점</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-line"></div>
+            <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-title">COMPANY</h3>
+                <div class="footer-content">
+                    <p>상호 서린컴퍼니(주) 대표 이영학 사업자등록번호 843-88-00934</p>
+                    <p>통신판매업 신고 2016-강원춘천-0225호 [사업자정보확인]</p>
+                    <p>사업장주소 강원특별자치도 춘천시 동면 춘천순환로 36</p>
+                    <p>[종합물류센터] 강원특별자치도 춘천시 동산면 군자리 1392</p>
+                    <p>[제1물류센터] 강원특별자치도 춘천시 동면 춘천순환로 359</p>
+                    <p>[제2물류센터] 강원특별자치도 춘천시 동면 금촌로 306</p>
+                    <p>[제3물류센터] 강원특별자치도 춘천시 동면 서부대성로 488</p>
+                    <p>개인정보관리책임자 정해림</p>
+                    <p>고객문의 cs@roundlab.co.kr 영업/제안 sales@roundlab.co.kr</p>
+                    <p>oversea/海外/해외 trade@roundlab.co.kr</p>
+                </div>
+            </div>
+            <div class="footer-center-group">
+                <div class="footer-center">
+                    <h3 class="footer-title">C/S</h3>
+                    <div class="footer-content">
+                        <p>070-7717-0675</p>
+                        <p>AM 10:00 - PM 5:00 (주말 및 공휴일 휴무)</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3 class="footer-title">BANK</h3>
+                    <div class="footer-content">
+                        <p>신한은행 100.032.613698</p>
+                        <p>예금주 서린컴퍼니(주)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
